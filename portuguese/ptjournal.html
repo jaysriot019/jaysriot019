@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【﻿Ｄ　ｉ　á　ｒ　ｉ　ｏ】</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body text="#fc0303">
+
+<div class="containerjournal">
+    <div class="divjournal">
+
+        <h3>Textos e qualquer outra coisa que eu tiver na cabeça</h3>
+
+        <button class="accordion">Abril 2025</button>
+
+        <div class="panel">
+            <div class="link-box">
+                <a href="https://jaysriot019.neocities.org/portuguese/diario/diario14042025" target="_blank">
+                    <h3 class="link-title" style="font-size: 18px;">14/04/2025 • Falando qualquer coisa finalmente</h3>
+                    <img src="/journal/images/dumbass.jpg" alt="Preview image">
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+const accordions = document.querySelectorAll('.accordion');
+const panels = document.querySelectorAll('.panel');
+
+accordions.forEach((accordion, i) => {
+    accordion.addEventListener('click', () => {
+        accordion.classList.toggle('active');
+        panels[i].classList.toggle('active');
+    });
+});
+</script>
+
+</body>
+</html>

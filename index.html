@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【﻿０　１　９　🫀　Ｊ　ａ　ｙ　Ｖ　ｓ　ｓ　ｌ　🫀　Ｑ　ｕ　ｅ　ｅ　ｒ　Ｐ　ｕ　ｎ　ｋ　🫀　０　１　９】</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body text="#fc0303">
+    <div class="wrapper">
+      <marquee class="GeneratedMarquee" direction="left" scrollamount="10" behavior="scroll">🏴🫀░Ⓐ░☭░Ⓔ░Ｗｅｌｃｏｍｅ░Ｔｏ░Ｍｙ░Ｗｅｂｓｉｔｅ░Ｔｈｉｎｇｙ░Ⓐ░☭░Ⓔ░🫀🏴</marquee>
+
+      <div class="header1">
+        <center><big><img border="0" src="/headerheader.png"></big></center>
+      </div>
+
+      <center><img border="0" src="/headerpage.png"></center>
+
+      <div class="navbar">
+        <a href="#" data-page="home.html" style="margin:0 10px;">Homepage</a>
+        <a href="#" data-page="about.html" style="margin:0 10px;">About</a>
+        <a href="#" data-page="journal.html" style="margin:0 10px;">Journal</a>
+        <a href="#" data-page="updates.html" style="margin:0 10px;">Updates/Logs</a>
+        <a href="#" data-page="sitemap.html" style="margin:0 10px;">Sitemap</a>
+      </div>
+
+      <div class="river">
+        <a href="#" data-page="rivertothesea.html" style="margin:0 10px;">🇵🇸 Benefit Compilation For The Victims Of The Gaza War 🇵🇸</a>
+      </div>
+
+      <div id="content"></div>
+    </div>
+
+    <div id="hover-text">Versão em português do site</div>
+    <img id="flag-widget" src="brflag.webp" alt="Portuguese redirection">
+    
+    <div class="visitors">
+      <p>Visits since 2024: </p>
+      <div class="counter">
+          <script type="text/javascript" src="https://counter.websiteout.com/js/6/6/6130/1"></script>
+      </div>
+    </div>
+
+    <div class="musicend1">
+      <b><center><figcaption style="color: White;">ÊRA PUNK!🏴</figcaption></center></b>
+      <br>
+      <div class="musicend2">
+        <iframe style="border:0; width:300px; height:42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1826163605/size=small/bgcol=333333/linkcol=9a64ff/track=853574520/transparent=true/" seamless></iframe>
+      </div>
+    </div>
+
+    <footer><p>© 2025 jaysriot019</p></footer>
+
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script>
+      kofiWidgetOverlay.draw('jaysriot019',{
+        'type':'floating-chat',
+        'floating-chat.donateButton.text':'Support me',
+        'floating-chat.donateButton.background-color':'#794bc4',
+        'floating-chat.donateButton.text-color':'#fff'
+      });
+    </script>
+
+    <script>
+      const flagWidget=document.getElementById("flag-widget");
+      const hoverText=document.getElementById("hover-text");
+      flagWidget.onmouseover=function(){hoverText.style.display="block"};
+      flagWidget.onmouseout=function(){hoverText.style.display="none"};
+      flagWidget.onclick=function(){window.location.href="portuguese/ptindex.html"};
+    </script>
+
+    <script>
+      (function(){
+        if(sessionStorage.getItem("langRedirect"))return;
+        const lang=navigator.language||navigator.userLanguage;
+        if(lang&&lang.toLowerCase().startsWith("pt")){
+          sessionStorage.setItem("langRedirect","true");
+          window.location.href="/portuguese/ptindex.html";
+        }
+      })();
+    </script>
+
+    <script>
+      (function(){
+        const isMobile=/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        const lang=(navigator.language||navigator.userLanguage||"").toLowerCase();
+        if(isMobile&&!sessionStorage.getItem("accessFullSite")){
+          if(lang.startsWith("pt"))window.location.href="/portuguese/ptmobilesitemap.html";
+          else window.location.href="/mobilesitemap.html";
+        }
+      })();
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded",()=>{
+        const links=document.querySelectorAll("[data-page]");
+        const content=document.getElementById("content");
+
+        function loadPage(page){
+          fetch(page).then(r=>r.text()).then(html=>content.innerHTML=html);
+        }
+
+        loadPage("home.html");
+
+        links.forEach(link=>{
+          link.addEventListener("click",e=>{
+            e.preventDefault();
+            loadPage(link.dataset.page);
+          });
+        });
+      });
+    </script>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const links = document.querySelectorAll("[data-page]");
+        const content = document.getElementById("content");
+    
+        function loadPage(page) {
+          fetch(page)
+            .then(r => r.text())
+            .then(html => {
+              content.innerHTML = html;
+              initAccordion(); 
+            });
+        }
+    
+        loadPage("home.html");
+    
+        links.forEach(link => {
+          link.addEventListener("click", e => {
+            e.preventDefault();
+            loadPage(link.dataset.page);
+          });
+        });
+      });
+    
+      function initAccordion() {
+        const accordions = document.querySelectorAll('.accordion');
+        const panels = document.querySelectorAll('.panel');
+    
+        if (accordions.length === 0) return;
+    
+        accordions.forEach((accordion, i) => {
+          const panel = panels[i];
+          accordion.onclick = () => {
+            accordion.classList.toggle('active');
+            panel.classList.toggle('active');
+          };
+        });
+      }
+    </script>
+
+  </body>
+</html>
